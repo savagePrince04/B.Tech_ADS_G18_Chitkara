@@ -3,7 +3,7 @@ package Lec3;
 import Lec3.LinkedList;
 
 public class LinkedList_client {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args){
         LinkedList sc = new LinkedList();
         sc.InsertAtBeginning(10);
         sc.InsertAtBeginning(20);
