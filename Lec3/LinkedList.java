@@ -34,10 +34,7 @@ public class LinkedList {
             size++;
         }
     }
-    public void InsertAtIndex(int data,int k) throws Exception{
-        if(k<0 || k>size){
-            throw new Exception("invalid input");
-        }
+    public void InsertAtIndex(int data,int k){
         if(size==0){
             InsertAtBeginning(data);
         }
@@ -53,10 +50,7 @@ public class LinkedList {
             size++;
         }
     }
-    public node GetNode(int k) throws Exception{
-        if(k<0 || k>size){
-            throw  new Exception("phir se input do");
-        }
+    public node GetNode(int k){
         node temp=head;
         for(int i=0;i<k;i++){
             temp=temp.next;
@@ -69,7 +63,7 @@ public class LinkedList {
     public int GetLast(){
         return tail.data;
     }
-    public int GetAtIndex(int k) throws Exception{
+    public int GetAtIndex(int k) {
         return GetNode(k).data;
     }
 
@@ -88,7 +82,7 @@ public class LinkedList {
         size--;
         return rv;
     }
-    public int RemoveAtLast() throws Exception{
+    public int RemoveAtLast(){
         if(size==1){
             return RemoveAtFirst();
         }
@@ -101,7 +95,7 @@ public class LinkedList {
             return rv;
         }
     }
-    public int RemoveAtIndex(int k) throws Exception{
+    public int RemoveAtIndex(int k) {
         if(k==0){
             return RemoveAtFirst();
         }
