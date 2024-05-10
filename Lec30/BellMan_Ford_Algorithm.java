@@ -6,10 +6,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class BellMan_Ford_Algorithm {
-	HashMap<Integer, HashMap<Integer, Integer>> map;
-
+	HashMap<Integer, HashMap<Integer, Integer>> map = new HashMap<>();
 	public BellMan_Ford_Algorithm(int v) {
-		map = new HashMap<>();
 		for (int i = 1; i <= v; i++) {
 			map.put(i, new HashMap<>());
 		}
